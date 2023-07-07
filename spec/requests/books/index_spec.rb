@@ -2,7 +2,7 @@ RSpec.describe 'GET /books', type: :request do
   let(:books) { app["persistence.rom"].relations[:books] }
 
   before do
-    books.insert(title: "Practical Object-Oriented Design in Ruby", author: "Sandi Metz")
+  books.insert(title: "Practical Object-Oriented Design in Ruby", author: "Sandi Metz")
     books.insert(title: "Test Driven Development", author: "Kent Beck")
   end
 
