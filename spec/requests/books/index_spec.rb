@@ -3,7 +3,7 @@ RSpec.describe 'GET /books', type: :request do
     get '/books'
 
     expect(last_response).to be_successful
-    expect(last_response.content_type).to eq('application/json; charset=utf8')
+    expect(last_response.content_type).to eq('application/json; charset=utf-8')
 
     response_body = JSON.parse(last_response.body)
 
